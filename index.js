@@ -1,6 +1,11 @@
 console.log("Hi there");
 
 
-var increment = 1 ++;
+const initial = 1;
 
-return increment;
+let inc = initial + 1;
+
+if(inc < 10) {
+  console.log(increment);
+}
+
