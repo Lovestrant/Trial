@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run nodejs file') {
             steps {
-                node index.js
+               bat 'node index.js'
             }
         }
     }
