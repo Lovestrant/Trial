@@ -7,9 +7,14 @@ pipeline {
                 echo 'Hello World'
             }
         }
-         stage('Hi') {
+        stage('Hi') {
             steps {
                 echo 'Hi There!'
+            }
+        }
+        stage('Run nodejs file') {
+            steps {
+                node index.js
             }
         }
     }
