@@ -22,9 +22,11 @@ pipeline {
     post {
         success {
             echo 'It succeeded!'
+            mail to: 'lovestrantkemboi@gmail.com', subject: 'Jenkins Pipeline Success', body: 'The Jenkins pipeline has completed successfully.'
         }
         failure {
             echo 'It failed!'
+            mail to: 'lovestrantkemboi@gmail.com', subject: 'Jenkins Pipeline Failure', body: 'The Jenkins pipeline has failed.'
         }
     }
 }
